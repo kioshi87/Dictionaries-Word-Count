@@ -10,6 +10,15 @@ counter = 0
 for line in test_file:
     separated_words = line.split(' ')       #separate each word by a space
     for word in separated_words:
-        counter += 1
         words_count[word] = counter
-    print(words_count) 
+        if words_count[word] == words_count[word]:
+            counter += 0
+        else:
+            counter += 1
+        print(words_count)
+for word, counter in words_count.items():
+    print(f'{word}: {counter}')
+       # if words_count[word]:
+            #counter = test
+            # counter += 1
+    #print(words_count)
